@@ -40,7 +40,7 @@ class CustomAppBar extends StatelessWidget {
           Flexible(
             child: InkWell(
               onTap: () {
-                Navigator.pop(context);
+                Navigator.pushNamed(context, '/');
               },
               child: Text(
                 'Intrvw Prctc'.toUpperCase(),
@@ -58,7 +58,7 @@ class CustomAppBar extends StatelessWidget {
             child: MenuItem(
               title: 'Home',
               press: () {
-                Navigator.pop(context);
+                Navigator.pushNamed(context, '/');
               },
             ),
           ),
@@ -67,10 +67,7 @@ class CustomAppBar extends StatelessWidget {
             child: MenuItem(
               title: 'Partnership',
               press: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => PartnershipScreen()),
-                );
+                Navigator.pushNamed(context, '/partnership');
               },
             ),
           ),
@@ -79,10 +76,7 @@ class CustomAppBar extends StatelessWidget {
             child: DefaultButton(
               title: 'Schedule Interview',
               press: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => StoreScreen()),
-                );
+                Navigator.pushNamed(context, '/store');
               },
               color: kAccentPrimaryColor,
             ),

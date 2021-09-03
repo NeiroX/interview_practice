@@ -7,6 +7,8 @@ import 'package:interview_practicing/models/Company.dart';
 import 'components/company_card.dart';
 
 class StoreScreen extends StatelessWidget {
+  static const String route = '/store';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

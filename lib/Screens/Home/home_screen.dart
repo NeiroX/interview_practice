@@ -6,6 +6,8 @@ import 'Components/custom_title.dart';
 import 'Components/text_point.dart';
 
 class HomeScreen extends StatelessWidget {
+  static const String route = '/';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

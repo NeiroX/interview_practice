@@ -4,6 +4,8 @@ import 'package:interview_practicing/constants.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 
 class PartnershipScreen extends StatelessWidget {
+  static const String route = '/partnership';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
