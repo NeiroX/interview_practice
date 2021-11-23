@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:interview_practicing/constants.dart';
 import 'package:interview_practicing/models/Company.dart';
 
-import 'custom_divider.dart';
+import 'store_custom_divider.dart';
 import 'service_button.dart';
 
 class CompanyCard extends StatefulWidget {
@@ -91,9 +91,13 @@ class _CompanyCardState extends State<CompanyCard> {
             Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: List.generate(
-                  companies[widget.index].services.length,
-                  (index) => ServiceButton(
-                      service: companies[widget.index].services[index])),
+                companies[widget.index].services.length,
+                (index) => ServiceButton(
+                  service: companies[widget.index].services[index],
+                  companyName: companies[widget.index].companyName,
+                    logoSrc: companies[widget.index].logoSrc,
+                ),
+              ),
             ),
           ],
         ),

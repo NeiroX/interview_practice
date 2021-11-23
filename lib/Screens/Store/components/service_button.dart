@@ -1,13 +1,17 @@
+import 'package:interview_practicing/Screens/Cart/cart_screen.dart';
 import 'package:interview_practicing/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:interview_practicing/models/Service.dart';
 
 class ServiceButton extends StatefulWidget {
   final Service service;
+  final String logoSrc, companyName;
 
   const ServiceButton({
     Key key,
     this.service,
+    this.companyName,
+    this.logoSrc,
   }) : super(key: key);
 
   @override
@@ -20,7 +24,10 @@ class _ServiceButtonState extends State<ServiceButton> {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        Navigator.of(context).push(
+            _createRoute(widget.service, widget.logoSrc, widget.companyName));
+      },
       onHover: (value) {
         setState(() {
           isHover = value;
@@ -90,4 +97,26 @@ class _ServiceButtonState extends State<ServiceButton> {
       ),
     );
   }
+}
+
+Route _createRoute(Service service, String logoSrc, String companyName) {
+  return PageRouteBuilder(
+    pageBuilder: (context, animation, secondaryAnimation) => CartScreen(
+      service: service,
+      logoSrc: logoSrc,
+      companyName: companyName,
+    ),
+    transitionsBuilder: (context, animation, secondaryAnimation, child) {
+      const begin = Offset(0.0, 1.0);
+      const end = Offset.zero;
+      const curve = Curves.ease;
+
+      var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
+
+      return SlideTransition(
+        position: animation.drive(tween),
+        child: child,
+      );
+    },
+  );
 }
