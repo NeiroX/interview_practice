@@ -49,7 +49,7 @@ class PartnershipScreen extends StatelessWidget {
               totalRepeatCount: 1,
               animatedTexts: [
                 TyperAnimatedText(
-                  'stark042004@yandex',
+                  'stark042004@yandex.ru',
                   textStyle: Theme.of(context)
                       .textTheme
                       .headline5

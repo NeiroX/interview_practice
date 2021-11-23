@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'Screens/Home/home_screen.dart';
+import 'Screens/Info/info_screen.dart';
 import 'Screens/Partnership/partnership_screen.dart';
 import 'Screens/Store/store_screen.dart';
 
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => HomeScreen(),
+        '/info': (context) => InfoScreen(),
         '/store': (context) => StoreScreen(),
         '/partnership': (context) => PartnershipScreen(),
       },

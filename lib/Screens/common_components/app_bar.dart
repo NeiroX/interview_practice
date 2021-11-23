@@ -66,7 +66,9 @@ class CustomAppBar extends StatelessWidget {
             flex: -1,
             child: MenuItem(
               title: 'Info',
-              press: () {},
+              press: () {
+                Navigator.pushNamed(context, '/info');
+              },
             ),
           ),
           Flexible(
