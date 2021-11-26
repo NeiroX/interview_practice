@@ -18,7 +18,7 @@ List<Feature> features = [
     id: 1,
     title: 'Feature 1',
     description:
-        'Description of this feature have to contain words which I haven\'t come up with yet',
+        'Description of this feature has to contain words which I haven\'t come up with yet',
     backgroundColor: Color(0xFF260003),
     imageSrc: 'images/icons/ui.png',
   ),
@@ -26,7 +26,7 @@ List<Feature> features = [
     id: 2,
     title: 'Feature 2',
     description:
-        'Description of this feature have to contain words which I haven\'t come up with yet',
+        'Description of this feature has to contain words which I haven\'t come up with yet',
     backgroundColor: Color(0xFF1b0038),
     imageSrc: 'images/icons/desktop.png',
   ),
@@ -34,7 +34,7 @@ List<Feature> features = [
     id: 3,
     title: 'Feature 3',
     description:
-        'Description of this feature have to contain words which I haven\'t come up with yet',
+        'Description of this feature has to contain words which I haven\'t come up with yet',
     backgroundColor: Color(0xFF000c22),
     imageSrc: 'images/icons/graphic.png',
   ),
@@ -42,7 +42,7 @@ List<Feature> features = [
     id: 4,
     title: 'Feature 4',
     description:
-        'Description of this feature have to contain words which I haven\'t come up with yet',
+        'Description of this feature has to contain words which I haven\'t come up with yet',
     backgroundColor: Color(0xFF001f1f),
     imageSrc: 'images/icons/Intreaction_design.png',
   )

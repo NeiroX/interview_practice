@@ -46,3 +46,28 @@ const kTextPointTextStyle = TextStyle(
     fontWeight: FontWeight.w200,
     fontSize: 20,
     height: 1.25);
+
+class ColorFilters {
+  static final greyscale = ColorFilter.matrix(<double>[
+    0.2126,
+    0.7152,
+    0.0722,
+    0,
+    0,
+    0.2126,
+    0.7152,
+    0.0722,
+    0,
+    0,
+    0.2126,
+    0.7152,
+    0.0722,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
+  ]);
+}
